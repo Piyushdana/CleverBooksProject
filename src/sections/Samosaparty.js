@@ -96,7 +96,7 @@ export default function Samosaparty() {
           <div className=" gap-6 -mt-8 hidden lg:flex ">
             <div>
               <a href="/">
-                <img src={Arrow} className="rotate-180" alt="" />
+                <img src={Arrow} className=" rotate-180" alt="" />
               </a>
             </div>
 
@@ -110,18 +110,18 @@ export default function Samosaparty() {
           {/* Bottom Grid */}
           <div className="grid md:w-full grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 ">
             <div className="text-center bg-[#f1e9fc] p-5 rounded-xl">
-              <h2 className="text-[14px] md:text-[32px] xl:text-[44px]">Upto 95%</h2>
+              <h2 className="text-[14px] md:text-[32px] xl:text-[44px] bg-gradient bg-clip-text text-transparent">Upto 95%</h2>
               <span className="text-18px">Demand Fullfillmet</span>
             </div>
 
             <div className="text-center bg-[#f1e9fc] p-5 rounded-xl">
-              <h2 className="text-[14px] lg:text-[32px] xl:text-[44px]"> {`<3%`}</h2>
-              <span className="text-18px">Daily Stock-out</span>
+              <h2 className="text-[14px] lg:text-[32px] xl:text-[44px] bg-gradient bg-clip-text text-transparent"> {`<3%`}</h2>
+              <span className="text-18px" >Daily Stock-out</span>
             </div>
 
             <div className="text-center  items-center justify-center bg-[#f1e9fc] p-2 lg:p-5 flex gap-2 lg:rounded-xl rounded-3xl">
-              <h2 className="text-[16px] xl:text-[17px]">Read Story</h2>
-              <img src={Arrow2} alt="" />
+              <h2 className="text-[16px] xl:text-[17px] bg-gradient bg-clip-text text-transparent">Read Story</h2>
+              <img src={Arrow2} className="bg-gradient bg-clip-text text-transparent" alt="" />
             </div>
 
             {/* Mobile Screen Arrow */}

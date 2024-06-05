@@ -63,7 +63,7 @@ export default function NavBar() {
 
 
                 <div className='hidden lg:flex gap-5 items-center'>
-                    <a href="/" className='text-gradient'>Login</a>
+                    <a href="/" className='text-gradient bg-gradient bg-clip-text text-transparent'>Login</a>
                     <a href="/" className='bg-custom-gradient py-2 px-4 rounded-full'>Talk to Us</a>
                 </div>
 

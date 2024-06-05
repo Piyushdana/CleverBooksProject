@@ -71,10 +71,10 @@ export default function SpreadSheet() {
                 <div className='flex flex-col gap-1 col-span-2 order-last lg:order-none md:mt-8'>
                     {data.map((item) => (
                         <div key={item.id} className='border-b-2 py-[20px]'>
-                            <h2 className='md:text-[21px] font-semibold text-[20px]' onClick={() => handleOpen(item.id)}>{item.title}</h2>
+                            <h2 className={`${openSection === item.id ?'bg-gradient bg-clip-text text-transparent':'text-black'} md:text-[21px] font-semibold text-[20px]`} onClick={() => handleOpen(item.id)}>{item.title}</h2>
                             <div className={`${openSection === item.id ? 'animate-scrollDown' : 'hidden'}`}>
                                 <p className='text-[16px] mt-3'>{item.para}</p>
-                                <a href="/" className='flex items-center text-[16px] py-7 ml-1 gap-3'>Learn more <img src={Arrow} alt="" /></a>
+                                <a href="/" className='flex items-center text-[16px] py-7 ml-1 gap-3 bg-gradient bg-clip-text text-transparent'>Learn more <img src={Arrow} alt="" /></a>
                             </div>
                         </div>
                     ))}
@@ -86,7 +86,7 @@ export default function SpreadSheet() {
             </div>
 
             <div className='text-center py-8'>
-                <a href="/" className='py-2 px-5 border border-gray-500 rounded-3xl'>View All Features</a>
+                <a href="/" className='py-2 px-5 border border-gray-500 rounded-3xl bg-gradient bg-clip-text text-transparent hover:bg-gradient'>View All Features</a>
             </div>
         </div>
     );

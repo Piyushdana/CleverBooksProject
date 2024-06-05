@@ -1,3 +1,4 @@
+import Footer from "./sections/Footer";
 import GrowFaster from "./sections/GrowFaster";
 import Header from "./sections/Header";
 import MetricsSection from "./sections/MetricsSection";
@@ -15,6 +16,7 @@ function App() {
         <SpreadSheet/>
         <MetricsSection/>
         <GrowFaster/>
+        <Footer/>
 
     </>
   );

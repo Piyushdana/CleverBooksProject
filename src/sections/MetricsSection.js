@@ -63,7 +63,7 @@ export default function MetricsSection() {
         className="rotate-180 px-4 cursor-pointer hidden md:flex left-0"
         alt="Previous"
       />
-      <div className="w-full max-w-4xl bg-white rounded-3xl shadow-lg overflow-hidden relative">
+      <div className="w-full max-w-4xl bg-white rounded-3xl xl:py-24 shadow-lg overflow-hidden relative">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
