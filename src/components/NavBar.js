@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {faBarsStaggered}from '@fortawesome/react-fontawesome  '
 import { faBarsStaggered, faClose } from '@fortawesome/free-solid-svg-icons'
+import Logo from '../assets//imgs/Logo.png'
 export default function NavBar() {
 
   const [open, setOpen] = useState(false);
@@ -45,7 +46,7 @@ export default function NavBar() {
           scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
         } bg-primary bg-opacity-70 flex items-center justify-around md:justify-between px-2 py-5 lg:px-10 lg:py-3 xl:px-36 md:py-5 text-white`}>
                 <div className='flex space-x-2 items-center'>
-                    <img src="" alt="Logo" />
+                    <img src={Logo} className='w-16' alt="Logo" />
                     <span className=' text-xl lg:text-2xl font-bold'>Cleverbooks</span>
                 </div>
 
